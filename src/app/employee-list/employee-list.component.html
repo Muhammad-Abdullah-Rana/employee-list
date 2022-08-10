@@ -1,0 +1,7 @@
+<h2 class='my-5'>Employee List</h2>
+<table class="table table-striped table-dark">
+    <thead><tr><th>Name</th></tr></thead>
+    <tbody>
+        <tr  *ngFor='let employee of employees'><td (click)="selectedEmployee.emit(employee)">{{employee.name}}</td></tr>
+    </tbody>
+</table>
